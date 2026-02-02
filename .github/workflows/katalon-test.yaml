@@ -8,7 +8,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    # Menggunakan kontainer resmi untuk memastikan driver dan display server tersedia
     container:
       image: katalonstudio/katalon:8.6.8
 
@@ -18,5 +17,5 @@ jobs:
 
       - name: Execute Katalon Studio Tests
         run: |
-          # Menjalankan tes tanpa argumen autoUpdateDrivers yang menyebabkan error
-          katalonc.sh -noSplash -runMode=console -projectPath="./" -browserType="Chrome (headless)" -testSuitePath="Test Suites/Login" -apiKey=${{ secrets.KATALON_API_KEY }}
+          # Perintah dengan apiKey yang dibungkus kutip untuk memastikan keamanan nilai
+          katalonc.sh -noSplash -runMode=console -projectPath="./" -browserType="Chrome (headless)" -testSuitePath="Test Suites/Login" -apiKey="${{ secrets.KATALON_API_KEY }}"
