@@ -15,10 +15,10 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v3
 
-      - name: Install Xvfb and Dependencies
+      - name: Install Display Server
         run: |
           sudo apt-get update
-          sudo apt-get install -y xvfb libgconf-2-4
+          sudo apt-get install -y xvfb
 
       - name: Execute Katalon Studio Tests
         uses: katalon-studio/katalon-studio-github-action@v2.2
