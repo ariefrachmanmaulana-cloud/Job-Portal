@@ -1,21 +1,22 @@
 name: CI Katalon Test
 
+# Menentukan kapan tes berjalan (setiap kali push ke main)
 on:
   push:
-    branches: [ "main", "Login" ]
-  workflow_dispatch:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    container:
-      image: katalonstudio/katalon:8.6.8
 
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
 
       - name: Execute Katalon Studio Tests
-        run: |
-          # Perintah dengan apiKey yang dibungkus kutip untuk memastikan keamanan nilai
-          katalonc.sh -noSplash -runMode=console -projectPath="./" -browserType="Chrome (headless)" -testSuitePath="Test Suites/Login" -apiKey="${{ secrets.KATALON_API_KEY }}"
+        uses: katalon-studio/katalon-studio-github-action@v3
+        with:
+          version: 'latest'
+          args: '-noSplash -browserType="Chrome" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/Login" -apiKey=${{ secrets.KATALON_API_KEY }}'
