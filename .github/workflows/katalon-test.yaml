@@ -8,14 +8,15 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # Menggunakan kontainer resmi agar semua driver display sudah tersedia
+    container:
+      image: katalonstudio/katalon:8.6.8
 
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
 
       - name: Execute Katalon Studio Tests
-        uses: katalon-studio/katalon-studio-github-action@v2.2
-        with:
-          version: '8.6.8'
-          # Kita gunakan Chrome (headless) di sini agar KRE otomatis menggunakan virtual display internal
-          args: '-noSplash -runMode=console -projectPath="./" -browserType="Chrome (headless)" -testSuitePath="Test Suites/Login" -apiKey=${{ secrets.KATALON_API_KEY }} --config -webui.autoUpdateDrivers=true'
+        run: |
+          # Perintah eksekusi langsung di dalam kontainer
+          katalonc.sh -noSplash -runMode=console -projectPath="./" -browserType="Chrome (headless)" -testSuitePath="Test Suites/Login" -apiKey=${{ secrets.KATALON_API_KEY }} --config -webui.autoUpdateDrivers=true
