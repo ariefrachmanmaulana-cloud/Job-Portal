@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     container:
-      image: katalonstudio/katalon:8.6.8 # Menggunakan image stabil yang sudah teruji
+      image: katalonstudio/katalon:8.6.8
 
     steps:
       - name: Checkout Code
@@ -17,13 +17,5 @@ jobs:
 
       - name: Execute Katalon Studio Tests
         run: |
-          # Eksekusi tes dengan parameter yang sudah kita fix sebelumnya
-          katalonc.sh -noSplash -runMode=console -projectPath="./" -browserType="Chrome (headless)" -testSuitePath="Test Suites/Login" -apiKey="${{ secrets.KATALON_API_KEY }}"
-
-      - name: Upload Test Reports
-        if: always() # Laporan akan tetap diunggah meskipun tes ada yang gagal
-        uses: actions/upload-artifact@v4
-        with:
-          name: Katalon-Test-Report
-          path: report/ # Folder default tempat Katalon menyimpan hasil laporan
-          retention-days: 7 # Laporan disimpan selama 7 hari untuk menghemat penyimpanan
+          # Menambahkan flag -reportFolder="" dan menghapus step Upload Artifact
+          katalonc.sh -noSplash -runMode=console -projectPath="./" -browserType="Chrome (headless)" -testSuitePath="Test Suites/Login" -apiKey="${{ secrets.KATALON_API_KEY }}" -reportFolder=""
