@@ -1,12 +1,11 @@
 name: CI Katalon Test
 
-# Menentukan kapan tes berjalan (setiap kali push ke main)
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "Login" ]
   pull_request:
     branches: [ "main" ]
-    workflow_dispatch: # <-- Tambahkan baris ini untuk memunculkan tombol manual
+  workflow_dispatch:
 
 jobs:
   build:
@@ -16,8 +15,13 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v3
 
+      - name: Install Xvfb and Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y xvfb libgconf-2-4
+
       - name: Execute Katalon Studio Tests
-        uses: katalon-studio/katalon-studio-github-action@v2.2 # Gunakan v2.2
+        uses: katalon-studio/katalon-studio-github-action@v2.2
         with:
-          version: '8.6.8' # Tentukan versi manual daripada 'latest'
-          args: 'xvfb-run -a katalonc -noSplash -runMode=console -browserType="Chrome" -testSuitePath="Test Suites/Login" -apiKey=${{ secrets.KATALON_API_KEY }}'
+          version: '8.6.8'
+          args: 'xvfb-run -a katalonc -noSplash -runMode=console -projectPath="./" -browserType="Chrome" -testSuitePath="Test Suites/Login" -apiKey=${{ secrets.KATALON_API_KEY }} --config -webui.autoUpdateDrivers=true'
