@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>New Test Case</name>
+   <name>User Akses Halaman Google</name>
    <tag></tag>
    <comment></comment>
+   <origin>WEB_RECORDER</origin>
    <recordOption>OTHER</recordOption>
-   <testCaseGuid>456a27be-35ea-4ed8-b654-9ba2fe113e6c</testCaseGuid>
+   <testCaseGuid>c512c61e-0664-4022-9d58-6f5d61fa7d86</testCaseGuid>
 </TestCaseEntity>
