@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Login" time="67.898" tests="4" failures="0" errors="0">
+   <testsuite name="Login" tests="4" failures="0" errors="0" time="67.898" skipped="0" timestamp="2026-02-02T08:37:56.442Z" hostname="Secondary - Klola" id="Test Suites/Login">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="C:\\Users\\Secondary\\git\\Job-Portal\\Reports\\20260202_153748\\Login\\20260202_153748"/>
+         <property name="logFiles" value="C:\\Users\\Secondary\\git\\Job-Portal\\Reports\\20260202_153748\\Login\\20260202_153748\\console0.log, C:\\Users\\Secondary\\git\\Job-Portal\\Reports\\20260202_153748\\Login\\20260202_153748\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="executionBindingVariables" value="[]"/>
+         <property name="hostName" value="Secondary - Klola"/>
+         <property name="os" value="Windows 11 64bit"/>
+         <property name="katalonVersion" value="11.0.0.0"/>
+         <property name="browser" value="Chrome 144.0.7559.110"/>
+         <property name="userFullName" value="Arief Rachman Maulana"/>
+         <property name="hostAddress" value="192.168.0.104"/>
+         <property name="sessionId" value="c1ed902a7587d673e503594e5ee4bca7"/>
+         <property name="projectName" value="Job-Portal"/>
+         <property name="seleniumVersion" value="4.39.0"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 11"/>
+      </properties>
+      <testcase name="Test Cases/Login/Negative/User Login with Email and Password Empty" time="12.865" classname="339f386e-8abd-429d-90f4-79e158b8d5e3" status="PASSED">
+         <system-out><![CDATA[02-02-2026T15:37:57 - [TEST_CASE][PASSED] - Test Cases/Login/Negative/User Login with Email and Password Empty: Test Cases/Login/Negative/User Login with Email and Password Empty
+
+02-02-2026T15:37:58 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+02-02-2026T15:37:58 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+02-02-2026T15:37:58 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+02-02-2026T15:38:02 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+02-02-2026T15:38:02 - [TEST_STEP][PASSED] - navigateToUrl("https://beca.wd105.myworkdayjobs.com/en-US/Beca/login?redirect=%2Fen-US%2FBeca%2FuserHome"): Navigate to 'https://beca.wd105.myworkdayjobs.com/en-US/Beca/login?redirect=%2Fen-US%2FBeca%2FuserHome' successfully
+
+02-02-2026T15:38:06 - [MESSAGE][PASSED] - Navigate to 'https://beca.wd105.myworkdayjobs.com/en-US/Beca/login?redirect=%2Fen-US%2FBeca%2FuserHome' successfully
+
+02-02-2026T15:38:06 - [TEST_STEP][PASSED] - click(findTestObject("Login/Page_Workday/div_Sign In")): Object: 'Object Repository/Login/Page_Workday/div_Sign In' is clicked on
+
+02-02-2026T15:38:10 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Workday/div_Sign In' is clicked on]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Login/Negative/User Login with Invalid Email Format" time="20.977" classname="30c5814a-a9fd-4dbd-86b0-299cc45a73ce" status="PASSED">
+         <system-out><![CDATA[02-02-2026T15:38:10 - [TEST_CASE][PASSED] - Test Cases/Login/Negative/User Login with Invalid Email Format: Test Cases/Login/Negative/User Login with Invalid Email Format
+
+02-02-2026T15:38:10 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+02-02-2026T15:38:10 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+02-02-2026T15:38:10 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+02-02-2026T15:38:10 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+02-02-2026T15:38:12 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+02-02-2026T15:38:12 - [TEST_STEP][PASSED] - navigateToUrl("https://beca.wd105.myworkdayjobs.com/en-US/Beca/login?redirect=%2Fen-US%2FBeca%2FuserHome"): Navigate to 'https://beca.wd105.myworkdayjobs.com/en-US/Beca/login?redirect=%2Fen-US%2FBeca%2FuserHome' successfully
+
+02-02-2026T15:38:23 - [MESSAGE][PASSED] - Navigate to 'https://beca.wd105.myworkdayjobs.com/en-US/Beca/login?redirect=%2Fen-US%2FBeca%2FuserHome' successfully
+
+02-02-2026T15:38:24 - [TEST_STEP][PASSED] - setText(findTestObject("Login/Page_Workday/input_Email Address"), "oke"): Text 'oke' is set on object 'Object Repository/Login/Page_Workday/input_Email Address'
+
+02-02-2026T15:38:30 - [MESSAGE][PASSED] - Text 'oke' is set on object 'Object Repository/Login/Page_Workday/input_Email Address'
+
+02-02-2026T15:38:30 - [TEST_STEP][PASSED] - click(findTestObject("Login/Page_Workday/div_Sign In")): Object: 'Object Repository/Login/Page_Workday/div_Sign In' is clicked on
+
+02-02-2026T15:38:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Workday/div_Sign In' is clicked on]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Login/Negative/User Login with Password Empty" time="19.509" classname="3692580f-5f41-4d0c-866c-05fa7f01c679" status="PASSED">
+         <system-out><![CDATA[02-02-2026T15:38:31 - [TEST_CASE][PASSED] - Test Cases/Login/Negative/User Login with Password Empty: Test Cases/Login/Negative/User Login with Password Empty
+
+02-02-2026T15:38:31 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+02-02-2026T15:38:31 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+02-02-2026T15:38:31 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+02-02-2026T15:38:31 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+02-02-2026T15:38:33 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+02-02-2026T15:38:33 - [TEST_STEP][PASSED] - navigateToUrl("https://beca.wd105.myworkdayjobs.com/en-US/Beca/login?redirect=%2Fen-US%2FBeca%2FuserHome"): Navigate to 'https://beca.wd105.myworkdayjobs.com/en-US/Beca/login?redirect=%2Fen-US%2FBeca%2FuserHome' successfully
+
+02-02-2026T15:38:43 - [MESSAGE][PASSED] - Navigate to 'https://beca.wd105.myworkdayjobs.com/en-US/Beca/login?redirect=%2Fen-US%2FBeca%2FuserHome' successfully
+
+02-02-2026T15:38:43 - [TEST_STEP][PASSED] - setText(findTestObject("Login/Page_Workday/input_Email Address"), "ariefrachmanmaulana@gmail.com"): Text 'ariefrachmanmaulana@gmail.com' is set on object 'Object Repository/Login/Page_Workday/input_Email Address'
+
+02-02-2026T15:38:49 - [MESSAGE][PASSED] - Text 'ariefrachmanmaulana@gmail.com' is set on object 'Object Repository/Login/Page_Workday/input_Email Address'
+
+02-02-2026T15:38:49 - [TEST_STEP][PASSED] - click(findTestObject("Login/Page_Workday/input_Password")): Object: 'Object Repository/Login/Page_Workday/input_Password' is clicked on
+
+02-02-2026T15:38:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Workday/input_Password' is clicked on
+
+02-02-2026T15:38:50 - [TEST_STEP][PASSED] - click(findTestObject("Login/Page_Workday/div_Sign In")): Object: 'Object Repository/Login/Page_Workday/div_Sign In' is clicked on
+
+02-02-2026T15:38:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Workday/div_Sign In' is clicked on]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Login/Positive/User Login with Valid Email and Password" time="13.641" classname="f07f5fb9-39c2-46a5-bd72-38eea3db8e94" status="PASSED">
+         <system-out><![CDATA[02-02-2026T15:38:50 - [TEST_CASE][PASSED] - Test Cases/Login/Positive/User Login with Valid Email and Password: Test Cases/Login/Positive/User Login with Valid Email and Password
+
+02-02-2026T15:38:50 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+02-02-2026T15:38:50 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+02-02-2026T15:38:51 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+02-02-2026T15:38:51 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+02-02-2026T15:38:52 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+02-02-2026T15:38:52 - [TEST_STEP][PASSED] - navigateToUrl("https://beca.wd105.myworkdayjobs.com/en-US/Beca/login?redirect=%2Fen-US%2FBeca%2FuserHome"): Navigate to 'https://beca.wd105.myworkdayjobs.com/en-US/Beca/login?redirect=%2Fen-US%2FBeca%2FuserHome' successfully
+
+02-02-2026T15:38:56 - [MESSAGE][PASSED] - Navigate to 'https://beca.wd105.myworkdayjobs.com/en-US/Beca/login?redirect=%2Fen-US%2FBeca%2FuserHome' successfully
+
+02-02-2026T15:38:56 - [TEST_STEP][PASSED] - setText(findTestObject("Login/Page_Workday/input_Email Address"), "ariefrachmanmaulana@gmail.com"): Text 'ariefrachmanmaulana@gmail.com' is set on object 'Object Repository/Login/Page_Workday/input_Email Address'
+
+02-02-2026T15:39:02 - [MESSAGE][PASSED] - Text 'ariefrachmanmaulana@gmail.com' is set on object 'Object Repository/Login/Page_Workday/input_Email Address'
+
+02-02-2026T15:39:02 - [TEST_STEP][PASSED] - click(findTestObject("Login/Page_Workday/input_Password")): Object: 'Object Repository/Login/Page_Workday/input_Password' is clicked on
+
+02-02-2026T15:39:02 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Workday/input_Password' is clicked on
+
+02-02-2026T15:39:02 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("Login/Page_Workday/input_Password"), "8RFGFzomPWdqY7ac6+vrJg=="): Text ****** has been set on object 'Object Repository/Login/Page_Workday/input_Password'
+
+02-02-2026T15:39:03 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/Login/Page_Workday/input_Password'
+
+02-02-2026T15:39:03 - [TEST_STEP][PASSED] - click(findTestObject("Login/Page_Workday/div_Sign InSign InEmail Address_Password_Sign In")): Object: 'Object Repository/Login/Page_Workday/div_Sign InSign InEmail Address_Password_Sign In' is clicked on
+
+02-02-2026T15:39:03 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Workday/div_Sign InSign InEmail Address_Password_Sign In' is clicked on
+
+02-02-2026T15:39:03 - [TEST_STEP][PASSED] - click(findTestObject("Login/Page_Workday/div_Sign In")): Object: 'Object Repository/Login/Page_Workday/div_Sign In' is clicked on
+
+02-02-2026T15:39:04 - [MESSAGE][PASSED] - Object: 'Object Repository/Login/Page_Workday/div_Sign In' is clicked on]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[02-02-2026T15:37:56 - [TEST_SUITE][PASSED] - Login: null]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

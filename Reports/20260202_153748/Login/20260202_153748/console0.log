@@ -1,0 +1,82 @@
+2026-02-02 15:37:56.014 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback default configuration initialized from: C:\Users\Secondary\.katalon\packages\KS-11.0.0\configuration\org.eclipse.osgi\148\0\.cp\resources\logback\logback-execution.xml
+2026-02-02 15:37:56.020 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback custom configuration initialized from: C:\Users\Secondary\git\Job-Portal\Include\config\log.properties
+2026-02-02 15:37:56.288 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/Login
+2026-02-02 15:37:56.486 INFO  c.k.katalon.core.main.TestSuiteExecutor  - userFullName = Arief Rachman Maulana
+2026-02-02 15:37:56.490 INFO  c.k.katalon.core.main.TestSuiteExecutor  - projectName = Job-Portal
+2026-02-02 15:37:56.494 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = Secondary - Klola
+2026-02-02 15:37:56.496 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Windows 11 64bit
+2026-02-02 15:37:56.498 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 192.168.0.104
+2026-02-02 15:37:56.500 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 11.0.0.0
+2026-02-02 15:37:57.319 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-02-02 15:37:57.319 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Login/Negative/User Login with Email and Password Empty
+2026-02-02 15:37:58.048 DEBUG User Login with Email and Password Empty - 1: openBrowser("")
+2026-02-02 15:37:58.683 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2026-02-02 15:37:58.809 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+Feb 02, 2026 3:38:01 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 144, returning the closest version; found: 143; Please update to a Selenium version that supports CDP version 144
+2026-02-02 15:38:02.417 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 6f69bc4c1bd1f694c577f49e00940c10
+2026-02-02 15:38:02.419 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 144.0.7559.110
+2026-02-02 15:38:02.420 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-02-02 15:38:02.423 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-02-02 15:38:02.443 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-02-02 15:38:02.545 DEBUG User Login with Email and Password Empty - 2: navigateToUrl("https://beca.wd105.myworkdayjobs.com/en-US/Beca/login?redirect=%2Fen-US%2FBeca%2FuserHome")
+2026-02-02 15:38:06.345 DEBUG User Login with Email and Password Empty - 3: click(findTestObject("Login/Page_Workday/div_Sign In"))
+2026-02-02 15:38:10.185 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Login/Negative/User Login with Email and Password Empty
+2026-02-02 15:38:10.198 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-02-02 15:38:10.198 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Login/Negative/User Login with Invalid Email Format
+2026-02-02 15:38:10.305 DEBUG t.User Login with Invalid Email Format   - 1: openBrowser("")
+2026-02-02 15:38:10.311 WARN  c.k.k.core.webui.driver.DriverFactory    - A browser is already opened. Closing browser and opening a new one
+2026-02-02 15:38:10.650 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2026-02-02 15:38:10.661 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+Feb 02, 2026 3:38:11 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 144, returning the closest version; found: 143; Please update to a Selenium version that supports CDP version 144
+2026-02-02 15:38:12.242 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = eac0c22a57ffa373179045c4673b6cfa
+2026-02-02 15:38:12.244 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 144.0.7559.110
+2026-02-02 15:38:12.245 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-02-02 15:38:12.246 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-02-02 15:38:12.248 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-02-02 15:38:12.286 DEBUG t.User Login with Invalid Email Format   - 2: navigateToUrl("https://beca.wd105.myworkdayjobs.com/en-US/Beca/login?redirect=%2Fen-US%2FBeca%2FuserHome")
+2026-02-02 15:38:23.995 DEBUG t.User Login with Invalid Email Format   - 3: setText(findTestObject("Login/Page_Workday/input_Email Address"), "oke")
+2026-02-02 15:38:30.485 DEBUG t.User Login with Invalid Email Format   - 4: click(findTestObject("Login/Page_Workday/div_Sign In"))
+2026-02-02 15:38:31.175 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Login/Negative/User Login with Invalid Email Format
+2026-02-02 15:38:31.181 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-02-02 15:38:31.184 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Login/Negative/User Login with Password Empty
+2026-02-02 15:38:31.286 DEBUG t.User Login with Password Empty         - 1: openBrowser("")
+2026-02-02 15:38:31.290 WARN  c.k.k.core.webui.driver.DriverFactory    - A browser is already opened. Closing browser and opening a new one
+2026-02-02 15:38:31.641 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2026-02-02 15:38:31.651 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+Feb 02, 2026 3:38:32 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 144, returning the closest version; found: 143; Please update to a Selenium version that supports CDP version 144
+2026-02-02 15:38:33.152 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 9df1816ec33b01a32fe6867641fe869c
+2026-02-02 15:38:33.154 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 144.0.7559.110
+2026-02-02 15:38:33.154 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-02-02 15:38:33.155 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-02-02 15:38:33.156 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-02-02 15:38:33.191 DEBUG t.User Login with Password Empty         - 2: navigateToUrl("https://beca.wd105.myworkdayjobs.com/en-US/Beca/login?redirect=%2Fen-US%2FBeca%2FuserHome")
+2026-02-02 15:38:43.714 DEBUG t.User Login with Password Empty         - 3: setText(findTestObject("Login/Page_Workday/input_Email Address"), "ariefrachmanmaulana@gmail.com")
+2026-02-02 15:38:49.595 DEBUG t.User Login with Password Empty         - 4: click(findTestObject("Login/Page_Workday/input_Password"))
+2026-02-02 15:38:50.266 DEBUG t.User Login with Password Empty         - 5: click(findTestObject("Login/Page_Workday/div_Sign In"))
+2026-02-02 15:38:50.693 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Login/Negative/User Login with Password Empty
+2026-02-02 15:38:50.698 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-02-02 15:38:50.699 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Login/Positive/User Login with Valid Email and Password
+2026-02-02 15:38:50.804 DEBUG User Login with Valid Email and Password - 1: openBrowser("")
+2026-02-02 15:38:50.808 WARN  c.k.k.core.webui.driver.DriverFactory    - A browser is already opened. Closing browser and opening a new one
+2026-02-02 15:38:51.162 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2026-02-02 15:38:51.169 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+Feb 02, 2026 3:38:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 144, returning the closest version; found: 143; Please update to a Selenium version that supports CDP version 144
+2026-02-02 15:38:52.695 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = c1ed902a7587d673e503594e5ee4bca7
+2026-02-02 15:38:52.696 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 144.0.7559.110
+2026-02-02 15:38:52.697 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-02-02 15:38:52.698 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-02-02 15:38:52.699 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-02-02 15:38:52.726 DEBUG User Login with Valid Email and Password - 2: navigateToUrl("https://beca.wd105.myworkdayjobs.com/en-US/Beca/login?redirect=%2Fen-US%2FBeca%2FuserHome")
+2026-02-02 15:38:56.880 DEBUG User Login with Valid Email and Password - 3: setText(findTestObject("Login/Page_Workday/input_Email Address"), "ariefrachmanmaulana@gmail.com")
+2026-02-02 15:39:02.264 DEBUG User Login with Valid Email and Password - 4: click(findTestObject("Login/Page_Workday/input_Password"))
+2026-02-02 15:39:02.893 DEBUG User Login with Valid Email and Password - 5: setEncryptedText(findTestObject("Login/Page_Workday/input_Password"), "8RFGFzomPWdqY7ac6+vrJg==")
+2026-02-02 15:39:03.336 DEBUG User Login with Valid Email and Password - 6: click(findTestObject("Login/Page_Workday/div_Sign InSign InEmail Address_Password_Sign In"))
+2026-02-02 15:39:03.931 DEBUG User Login with Valid Email and Password - 7: click(findTestObject("Login/Page_Workday/div_Sign In"))
+2026-02-02 15:39:04.339 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Login/Positive/User Login with Valid Email and Password
+2026-02-02 15:39:04.693 INFO  c.k.katalon.core.main.TestSuiteExecutor  - --------------------
+2026-02-02 15:39:04.694 INFO  c.k.katalon.core.main.TestSuiteExecutor  - END Test Suites/Login
+2026-02-02 15:39:04.694 INFO  c.k.katalon.core.main.TestSuiteExecutor  - ====================

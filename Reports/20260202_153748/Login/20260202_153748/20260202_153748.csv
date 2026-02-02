@@ -1,0 +1,29 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Login,Chrome 144.0.7559.110,,,02-02-2026 15:37:56,02-02-2026 15:39:04,"1m - 8,252s",PASSED
+,,,,,,,
+Test Cases/Login/Negative/User Login with Email and Password Empty,Chrome 144.0.7559.110,,,02-02-2026 15:37:57,02-02-2026 15:38:10,"12,865s",PASSED
+"openBrowser("""")",Chrome 144.0.7559.110,,,02-02-2026 15:37:58,02-02-2026 15:38:02,"4,498s",PASSED
+"navigateToUrl(""https://beca.wd105.myworkdayjobs.com/en-US/Beca/login?redirect=%2Fen-US%2FBeca%2FuserHome"")",Chrome 144.0.7559.110,,,02-02-2026 15:38:02,02-02-2026 15:38:06,"3,798s",PASSED
+"click(findTestObject(""Login/Page_Workday/div_Sign In""))",Chrome 144.0.7559.110,,,02-02-2026 15:38:06,02-02-2026 15:38:10,"3,837s",PASSED
+,,,,,,,
+Test Cases/Login/Negative/User Login with Invalid Email Format,Chrome 144.0.7559.110,,,02-02-2026 15:38:10,02-02-2026 15:38:31,"20,977s",PASSED
+"openBrowser("""")",Chrome 144.0.7559.110,,,02-02-2026 15:38:10,02-02-2026 15:38:12,"1,981s",PASSED
+"navigateToUrl(""https://beca.wd105.myworkdayjobs.com/en-US/Beca/login?redirect=%2Fen-US%2FBeca%2FuserHome"")",Chrome 144.0.7559.110,,,02-02-2026 15:38:12,02-02-2026 15:38:23,"11,709s",PASSED
+"setText(findTestObject(""Login/Page_Workday/input_Email Address""), ""oke"")",Chrome 144.0.7559.110,,,02-02-2026 15:38:24,02-02-2026 15:38:30,"6,485s",PASSED
+"click(findTestObject(""Login/Page_Workday/div_Sign In""))",Chrome 144.0.7559.110,,,02-02-2026 15:38:30,02-02-2026 15:38:31,"0,687s",PASSED
+,,,,,,,
+Test Cases/Login/Negative/User Login with Password Empty,Chrome 144.0.7559.110,,,02-02-2026 15:38:31,02-02-2026 15:38:50,"19,509s",PASSED
+"openBrowser("""")",Chrome 144.0.7559.110,,,02-02-2026 15:38:31,02-02-2026 15:38:33,"1,904s",PASSED
+"navigateToUrl(""https://beca.wd105.myworkdayjobs.com/en-US/Beca/login?redirect=%2Fen-US%2FBeca%2FuserHome"")",Chrome 144.0.7559.110,,,02-02-2026 15:38:33,02-02-2026 15:38:43,"10,523s",PASSED
+"setText(findTestObject(""Login/Page_Workday/input_Email Address""), ""ariefrachmanmaulana@gmail.com"")",Chrome 144.0.7559.110,,,02-02-2026 15:38:43,02-02-2026 15:38:49,"5,880s",PASSED
+"click(findTestObject(""Login/Page_Workday/input_Password""))",Chrome 144.0.7559.110,,,02-02-2026 15:38:49,02-02-2026 15:38:50,"0,671s",PASSED
+"click(findTestObject(""Login/Page_Workday/div_Sign In""))",Chrome 144.0.7559.110,,,02-02-2026 15:38:50,02-02-2026 15:38:50,"0,425s",PASSED
+,,,,,,,
+Test Cases/Login/Positive/User Login with Valid Email and Password,Chrome 144.0.7559.110,,,02-02-2026 15:38:50,02-02-2026 15:39:04,"13,641s",PASSED
+"openBrowser("""")",Chrome 144.0.7559.110,,,02-02-2026 15:38:50,02-02-2026 15:38:52,"1,922s",PASSED
+"navigateToUrl(""https://beca.wd105.myworkdayjobs.com/en-US/Beca/login?redirect=%2Fen-US%2FBeca%2FuserHome"")",Chrome 144.0.7559.110,,,02-02-2026 15:38:52,02-02-2026 15:38:56,"4,153s",PASSED
+"setText(findTestObject(""Login/Page_Workday/input_Email Address""), ""ariefrachmanmaulana@gmail.com"")",Chrome 144.0.7559.110,,,02-02-2026 15:38:56,02-02-2026 15:39:02,"5,385s",PASSED
+"click(findTestObject(""Login/Page_Workday/input_Password""))",Chrome 144.0.7559.110,,,02-02-2026 15:39:02,02-02-2026 15:39:02,"0,629s",PASSED
+"setEncryptedText(findTestObject(""Login/Page_Workday/input_Password""), ""8RFGFzomPWdqY7ac6+vrJg=="")",Chrome 144.0.7559.110,,,02-02-2026 15:39:02,02-02-2026 15:39:03,"0,442s",PASSED
+"click(findTestObject(""Login/Page_Workday/div_Sign InSign InEmail Address_Password_Sign In""))",Chrome 144.0.7559.110,,,02-02-2026 15:39:03,02-02-2026 15:39:03,"0,594s",PASSED
+"click(findTestObject(""Login/Page_Workday/div_Sign In""))",Chrome 144.0.7559.110,,,02-02-2026 15:39:03,02-02-2026 15:39:04,"0,404s",PASSED

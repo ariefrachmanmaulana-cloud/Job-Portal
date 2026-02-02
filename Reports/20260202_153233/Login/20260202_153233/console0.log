@@ -1,0 +1,654 @@
+2026-02-02 15:33:06.201 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback default configuration initialized from: C:\Users\Secondary\.katalon\packages\KS-11.0.0\configuration\org.eclipse.osgi\148\0\.cp\resources\logback\logback-execution.xml
+2026-02-02 15:33:06.210 INFO  c.k.k.c.l.logback.LogbackConfigurator    - Logback custom configuration initialized from: C:\Users\Secondary\git\Job-Portal\Include\config\log.properties
+2026-02-02 15:33:06.480 INFO  c.k.katalon.core.main.TestSuiteExecutor  - START Test Suites/Login
+2026-02-02 15:33:06.780 INFO  c.k.katalon.core.main.TestSuiteExecutor  - userFullName = Arief Rachman Maulana
+2026-02-02 15:33:06.783 INFO  c.k.katalon.core.main.TestSuiteExecutor  - projectName = Job-Portal
+2026-02-02 15:33:06.784 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostName = Secondary - Klola
+2026-02-02 15:33:06.787 INFO  c.k.katalon.core.main.TestSuiteExecutor  - os = Windows 11 64bit
+2026-02-02 15:33:06.789 INFO  c.k.katalon.core.main.TestSuiteExecutor  - hostAddress = 192.168.0.104
+2026-02-02 15:33:06.792 INFO  c.k.katalon.core.main.TestSuiteExecutor  - katalonVersion = 11.0.0.0
+2026-02-02 15:33:07.754 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-02-02 15:33:07.755 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Login/Negative/User Login with Email and Password Empty
+2026-02-02 15:33:08.433 DEBUG User Login with Email and Password Empty - 1: openBrowser("")
+2026-02-02 15:33:08.970 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2026-02-02 15:33:09.111 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+Feb 02, 2026 3:33:11 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 144, returning the closest version; found: 143; Please update to a Selenium version that supports CDP version 144
+2026-02-02 15:33:12.660 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = a9e7680139fd7a129f82b6833cf93bdd
+2026-02-02 15:33:12.668 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 144.0.7559.110
+2026-02-02 15:33:12.669 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-02-02 15:33:12.670 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-02-02 15:33:12.696 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-02-02 15:33:12.801 DEBUG User Login with Email and Password Empty - 2: navigateToUrl("https://beca.wd105.myworkdayjobs.com/en-US/Beca/login?redirect=%2Fen-US%2FBeca%2FuserHome")
+2026-02-02 15:33:17.986 DEBUG User Login with Email and Password Empty - 3: click(findTestObject("Login/Page_Workday/div_Sign In"))
+2026-02-02 15:33:21.571 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Login/Negative/User Login with Email and Password Empty
+2026-02-02 15:33:21.583 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-02-02 15:33:21.583 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Login/Negative/User Login with Invalid Email Format
+2026-02-02 15:33:21.699 DEBUG t.User Login with Invalid Email Format   - 1: openBrowser("")
+2026-02-02 15:33:21.704 WARN  c.k.k.core.webui.driver.DriverFactory    - A browser is already opened. Closing browser and opening a new one
+2026-02-02 15:33:22.088 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2026-02-02 15:33:22.094 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+Feb 02, 2026 3:33:23 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 144, returning the closest version; found: 143; Please update to a Selenium version that supports CDP version 144
+2026-02-02 15:33:23.774 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 8fcdee9b5c5cfeba1ef25da2d8483f8c
+2026-02-02 15:33:23.776 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 144.0.7559.110
+2026-02-02 15:33:23.777 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-02-02 15:33:23.778 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-02-02 15:33:23.784 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-02-02 15:33:23.857 DEBUG t.User Login with Invalid Email Format   - 2: navigateToUrl("https://beca.wd105.myworkdayjobs.com/en-US/Beca/login?redirect=%2Fen-US%2FBeca%2FuserHome")
+2026-02-02 15:33:28.326 DEBUG t.User Login with Invalid Email Format   - 3: setText(findTestObject("Login/Page_Workday/input_Email Address"), "oke")
+2026-02-02 15:33:31.997 DEBUG t.User Login with Invalid Email Format   - 4: click(findTestObject("Login/Page_Workday/div_Sign In"))
+2026-02-02 15:33:32.669 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Login/Negative/User Login with Invalid Email Format
+2026-02-02 15:33:32.676 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-02-02 15:33:32.676 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Login/Negative/User Login with Password Empty
+2026-02-02 15:33:32.792 DEBUG t.User Login with Password Empty         - 1: openBrowser("")
+2026-02-02 15:33:32.796 WARN  c.k.k.core.webui.driver.DriverFactory    - A browser is already opened. Closing browser and opening a new one
+2026-02-02 15:33:33.160 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2026-02-02 15:33:33.171 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+Feb 02, 2026 3:33:34 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 144, returning the closest version; found: 143; Please update to a Selenium version that supports CDP version 144
+2026-02-02 15:33:34.739 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 9f1b4983df56f77250263be17ee5933b
+2026-02-02 15:33:34.741 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 144.0.7559.110
+2026-02-02 15:33:34.741 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-02-02 15:33:34.742 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-02-02 15:33:34.743 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-02-02 15:33:34.784 DEBUG t.User Login with Password Empty         - 2: navigateToUrl("https://beca.wd105.myworkdayjobs.com/en-US/Beca/login?redirect=%2Fen-US%2FBeca%2FuserHome")
+2026-02-02 15:33:39.644 DEBUG t.User Login with Password Empty         - 3: setText(findTestObject("Login/Page_Workday/input_Email Address"), "ariefrachmanmaulana@gmail.com")
+2026-02-02 15:33:43.844 DEBUG t.User Login with Password Empty         - 4: click(findTestObject("Login/Page_Workday/input_Password"))
+2026-02-02 15:33:44.475 DEBUG t.User Login with Password Empty         - 5: click(findTestObject("Login/Page_Workday/div_Sign In"))
+2026-02-02 15:33:44.895 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Login/Negative/User Login with Password Empty
+2026-02-02 15:33:44.900 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-02-02 15:33:44.900 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Login/Positive/User Login with Valid Email and Password
+2026-02-02 15:33:44.999 DEBUG User Login with Valid Email and Password - 1: openBrowser("")
+2026-02-02 15:33:45.004 WARN  c.k.k.core.webui.driver.DriverFactory    - A browser is already opened. Closing browser and opening a new one
+2026-02-02 15:33:45.330 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2026-02-02 15:33:45.337 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+Feb 02, 2026 3:33:46 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 144, returning the closest version; found: 143; Please update to a Selenium version that supports CDP version 144
+2026-02-02 15:33:46.835 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 0e3a6967f08e31f948342d9eca78afd1
+2026-02-02 15:33:46.837 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 144.0.7559.110
+2026-02-02 15:33:46.839 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-02-02 15:33:46.840 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-02-02 15:33:46.841 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-02-02 15:33:46.873 DEBUG User Login with Valid Email and Password - 2: navigateToUrl("https://beca.wd105.myworkdayjobs.com/en-US/Beca/login?redirect=%2Fen-US%2FBeca%2FuserHome")
+2026-02-02 15:33:58.286 DEBUG User Login with Valid Email and Password - 3: setText(findTestObject("Login/Page_Workday/input_Email Address"), "ariefrachmanmaulana@gmail.com")
+2026-02-02 15:34:03.666 DEBUG User Login with Valid Email and Password - 4: click(findTestObject("Login/Page_Workday/input_Password"))
+2026-02-02 15:34:04.299 DEBUG User Login with Valid Email and Password - 5: setEncryptedText(findTestObject("Login/Page_Workday/input_Password"), "8RFGFzomPWdqY7ac6+vrJg==")
+2026-02-02 15:34:04.834 DEBUG User Login with Valid Email and Password - 6: click(findTestObject("Login/Page_Workday/div_Sign InSign InEmail Address_Password_Sign In"))
+2026-02-02 15:34:05.431 DEBUG User Login with Valid Email and Password - 7: click(findTestObject("Login/Page_Workday/div_Sign In"))
+2026-02-02 15:34:05.839 DEBUG User Login with Valid Email and Password - 8: click(findTestObject("Login/Page_Candidate Home/a_Test Analyst"))
+2026-02-02 15:34:15.998 WARN  .c.w.m.WebUiElementFinderWithSelfHealing - [WEBUI-SELF-HEALING] Failed to find element with id 'Object Repository/Login/Page_Candidate Home/a_Test Analyst'. Try using Self-healing.
+2026-02-02 15:34:16.253 INFO  c.k.k.c.webui.model.WebUiElementFinder   - [WEBUI-SELF-HEALING] Failed Locator: '//*[@data-automation-id = 'applicationTitle']//a'.
+2026-02-02 15:34:16.491 INFO  c.k.k.c.webui.model.WebUiElementFinder   - [WEBUI-SELF-HEALING] Failed Locator: '//a[@href = '/en-US/Beca/job/Test-Analyst_JR100145-1' and (text() = 'Test Analyst' or . = 'Test Analyst')]'.
+2026-02-02 15:34:16.773 WARN  c.k.k.c.webui.model.WebUiElementFinder   - [WEBUI-SELF-HEALING] Web element with id: 'Object Repository/Login/Page_Candidate Home/a_Test Analyst' located by 'By.cssSelector: [data-automation-id="applicationTitle"] a' not found
+> Remove hidden elements: 88.909 -> 5.036 (-94,45%)
+> Remove next siblings: 5.036 -> 5.036 (-0%)
+> Remove redundant parents: 5.036 -> 5.036 (-0%)
+> Remove event handler attributes: 5.036 -> 5.036 (-0%)
+> Trim long attributes: 5.036 -> 4.957 (-0,09%)
+> Trim long text: 4.957 -> 4.925 (-0,04%)
+> Minify HTML syntax: 4.925 -> 4.574 (-0,4%)
+>>> Total: 88.803 -> 4.925 (-94,45%)
+2026-02-02 15:34:19.653 ERROR c.k.k.core.keyword.internal.KeywordMain  - ❌ Unable to click on object 'Object Repository/Login/Page_Candidate Home/a_Test Analyst' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Login/Page_Candidate Home/a_Test Analyst'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:133)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:38)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:95)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:721)
+	at User Login with Valid Email and Password.run(User Login with Valid Email and Password:34)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:502)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:493)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:472)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:464)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:334)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:163)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:120)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)
+	at S0.run(S0.groovy:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: org.eclipse.e4.core.di.InjectionException: Could not find satisfiable constructor in com.kms.katalon.ai.core.services.ILlmService
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:410)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:319)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:203)
+	at com.kms.katalon.core.main.ExecutionServiceContext.registerService(ExecutionServiceContext.java:36)
+	at com.kms.katalon.core.main.ExecutionServiceContext.registerService(ExecutionServiceContext.java:31)
+	at com.kms.katalon.core.main.ExecutionServiceContext.getService(ExecutionServiceContext.java:51)
+	at com.katalon.selfhealing.execution.healers.LLMTestObjectHealer.heal(LLMTestObjectHealer.java:239)
+	at com.katalon.selfhealing.execution.healers.SelfHealingPipeline.lambda$1(SelfHealingPipeline.java:143)
+	at com.kms.katalon.core.executionpipeline.SubExecutionPipeline.execute(SubExecutionPipeline.java:31)
+	at com.kms.katalon.core.executionpipeline.SubExecutionPipeline.execute(SubExecutionPipeline.java:25)
+	at com.kms.katalon.core.executionpipeline.ExecutionPipeline.execute(ExecutionPipeline.java:16)
+	at com.katalon.selfhealing.execution.healers.SelfHealingPipeline.execute(SelfHealingPipeline.java:177)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findElemnentsWithSelfHealing(WebUIAbstractKeyword.java:201)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.lambda$1(WebUIAbstractKeyword.java:125)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.retry(SeleniumActionRetryController.java:49)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.retry(SeleniumActionRetryController.java:44)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.java:115)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:52)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at jdk.proxy2/jdk.proxy2.$Proxy47.execute(Unknown Source)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.doCall(WebUIKeywordMain.groovy:135)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.call(WebUIKeywordMain.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:133)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:38)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:95)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:721)
+	at Script1770020870251.run(Script1770020870251.groovy:34)
+	... 13 more
+)
+2026-02-02 15:34:19.659 ERROR c.k.katalon.core.main.TestCaseExecutor   - ❌ Test Cases/Login/Positive/User Login with Valid Email and Password FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Login/Page_Candidate Home/a_Test Analyst'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:133)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:38)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:95)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:721)
+	at User Login with Valid Email and Password.run(User Login with Valid Email and Password:34)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:502)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:493)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:472)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:464)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:334)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:163)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:120)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)
+	at S0.run(S0.groovy:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: org.eclipse.e4.core.di.InjectionException: Could not find satisfiable constructor in com.kms.katalon.ai.core.services.ILlmService
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:410)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:319)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:203)
+	at com.kms.katalon.core.main.ExecutionServiceContext.registerService(ExecutionServiceContext.java:36)
+	at com.kms.katalon.core.main.ExecutionServiceContext.registerService(ExecutionServiceContext.java:31)
+	at com.kms.katalon.core.main.ExecutionServiceContext.getService(ExecutionServiceContext.java:51)
+	at com.katalon.selfhealing.execution.healers.LLMTestObjectHealer.heal(LLMTestObjectHealer.java:239)
+	at com.katalon.selfhealing.execution.healers.SelfHealingPipeline.lambda$1(SelfHealingPipeline.java:143)
+	at com.kms.katalon.core.executionpipeline.SubExecutionPipeline.execute(SubExecutionPipeline.java:31)
+	at com.kms.katalon.core.executionpipeline.SubExecutionPipeline.execute(SubExecutionPipeline.java:25)
+	at com.kms.katalon.core.executionpipeline.ExecutionPipeline.execute(ExecutionPipeline.java:16)
+	at com.katalon.selfhealing.execution.healers.SelfHealingPipeline.execute(SelfHealingPipeline.java:177)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findElemnentsWithSelfHealing(WebUIAbstractKeyword.java:201)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.lambda$1(WebUIAbstractKeyword.java:125)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.retry(SeleniumActionRetryController.java:49)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.retry(SeleniumActionRetryController.java:44)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.java:115)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:52)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at jdk.proxy2/jdk.proxy2.$Proxy47.execute(Unknown Source)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.doCall(WebUIKeywordMain.groovy:135)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.call(WebUIKeywordMain.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	... 19 more
+
+2026-02-02 15:34:19.667 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Login/Positive/User Login with Valid Email and Password
+2026-02-02 15:34:19.672 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-02-02 15:34:19.672 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Login/Positive/User Login with Valid Email and Password - Retry attempt 1
+2026-02-02 15:34:19.698 DEBUG User Login with Valid Email and Password - 1: openBrowser("")
+2026-02-02 15:34:19.701 WARN  c.k.k.core.webui.driver.DriverFactory    - A browser is already opened. Closing browser and opening a new one
+2026-02-02 15:34:20.056 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2026-02-02 15:34:20.060 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+Feb 02, 2026 3:34:21 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 144, returning the closest version; found: 143; Please update to a Selenium version that supports CDP version 144
+2026-02-02 15:34:21.565 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = 325eadac6d50ffff45f2bfb825ad7ca7
+2026-02-02 15:34:21.567 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 144.0.7559.110
+2026-02-02 15:34:21.567 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-02-02 15:34:21.568 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-02-02 15:34:21.569 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-02-02 15:34:21.594 DEBUG User Login with Valid Email and Password - 2: navigateToUrl("https://beca.wd105.myworkdayjobs.com/en-US/Beca/login?redirect=%2Fen-US%2FBeca%2FuserHome")
+2026-02-02 15:34:34.030 DEBUG User Login with Valid Email and Password - 3: setText(findTestObject("Login/Page_Workday/input_Email Address"), "ariefrachmanmaulana@gmail.com")
+2026-02-02 15:34:38.873 DEBUG User Login with Valid Email and Password - 4: click(findTestObject("Login/Page_Workday/input_Password"))
+2026-02-02 15:34:39.563 DEBUG User Login with Valid Email and Password - 5: setEncryptedText(findTestObject("Login/Page_Workday/input_Password"), "8RFGFzomPWdqY7ac6+vrJg==")
+2026-02-02 15:34:40.121 DEBUG User Login with Valid Email and Password - 6: click(findTestObject("Login/Page_Workday/div_Sign InSign InEmail Address_Password_Sign In"))
+2026-02-02 15:34:40.710 DEBUG User Login with Valid Email and Password - 7: click(findTestObject("Login/Page_Workday/div_Sign In"))
+2026-02-02 15:34:41.110 DEBUG User Login with Valid Email and Password - 8: click(findTestObject("Login/Page_Candidate Home/a_Test Analyst"))
+2026-02-02 15:34:51.322 WARN  .c.w.m.WebUiElementFinderWithSelfHealing - [WEBUI-SELF-HEALING] Failed to find element with id 'Object Repository/Login/Page_Candidate Home/a_Test Analyst'. Try using Self-healing.
+2026-02-02 15:34:51.565 INFO  c.k.k.c.webui.model.WebUiElementFinder   - [WEBUI-SELF-HEALING] Failed Locator: '//*[@data-automation-id = 'applicationTitle']//a'.
+2026-02-02 15:34:51.809 INFO  c.k.k.c.webui.model.WebUiElementFinder   - [WEBUI-SELF-HEALING] Failed Locator: '//a[@href = '/en-US/Beca/job/Test-Analyst_JR100145-1' and (text() = 'Test Analyst' or . = 'Test Analyst')]'.
+2026-02-02 15:34:52.060 WARN  c.k.k.c.webui.model.WebUiElementFinder   - [WEBUI-SELF-HEALING] Web element with id: 'Object Repository/Login/Page_Candidate Home/a_Test Analyst' located by 'By.cssSelector: [data-automation-id="applicationTitle"] a' not found
+> Remove hidden elements: 88.909 -> 5.036 (-94,45%)
+> Remove next siblings: 5.036 -> 5.036 (-0%)
+> Remove redundant parents: 5.036 -> 5.036 (-0%)
+> Remove event handler attributes: 5.036 -> 5.036 (-0%)
+> Trim long attributes: 5.036 -> 4.957 (-0,09%)
+> Trim long text: 4.957 -> 4.925 (-0,04%)
+> Minify HTML syntax: 4.925 -> 4.574 (-0,4%)
+>>> Total: 88.803 -> 4.925 (-94,45%)
+2026-02-02 15:34:52.543 ERROR c.k.k.core.keyword.internal.KeywordMain  - ❌ Unable to click on object 'Object Repository/Login/Page_Candidate Home/a_Test Analyst' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Login/Page_Candidate Home/a_Test Analyst'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:133)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:38)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:95)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:721)
+	at User Login with Valid Email and Password.run(User Login with Valid Email and Password:34)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:502)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:493)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:472)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:464)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:334)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:422)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:163)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:120)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)
+	at S0.run(S0.groovy:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: org.eclipse.e4.core.di.InjectionException: Could not find satisfiable constructor in com.kms.katalon.ai.core.services.ILlmService
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:410)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:319)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:203)
+	at com.kms.katalon.core.main.ExecutionServiceContext.registerService(ExecutionServiceContext.java:36)
+	at com.kms.katalon.core.main.ExecutionServiceContext.registerService(ExecutionServiceContext.java:31)
+	at com.kms.katalon.core.main.ExecutionServiceContext.getService(ExecutionServiceContext.java:51)
+	at com.katalon.selfhealing.execution.healers.LLMTestObjectHealer.heal(LLMTestObjectHealer.java:239)
+	at com.katalon.selfhealing.execution.healers.SelfHealingPipeline.lambda$1(SelfHealingPipeline.java:143)
+	at com.kms.katalon.core.executionpipeline.SubExecutionPipeline.execute(SubExecutionPipeline.java:31)
+	at com.kms.katalon.core.executionpipeline.SubExecutionPipeline.execute(SubExecutionPipeline.java:25)
+	at com.kms.katalon.core.executionpipeline.ExecutionPipeline.execute(ExecutionPipeline.java:16)
+	at com.katalon.selfhealing.execution.healers.SelfHealingPipeline.execute(SelfHealingPipeline.java:177)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findElemnentsWithSelfHealing(WebUIAbstractKeyword.java:201)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.lambda$1(WebUIAbstractKeyword.java:125)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.retry(SeleniumActionRetryController.java:49)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.retry(SeleniumActionRetryController.java:44)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.java:115)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:52)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at jdk.proxy2/jdk.proxy2.$Proxy47.execute(Unknown Source)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.doCall(WebUIKeywordMain.groovy:135)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.call(WebUIKeywordMain.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:133)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:38)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:95)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:721)
+	at Script1770020870251.run(Script1770020870251.groovy:34)
+	... 14 more
+)
+2026-02-02 15:34:52.548 ERROR c.k.katalon.core.main.TestCaseExecutor   - ❌ Test Cases/Login/Positive/User Login with Valid Email and Password FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Login/Page_Candidate Home/a_Test Analyst'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:133)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:38)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:95)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:721)
+	at User Login with Valid Email and Password.run(User Login with Valid Email and Password:34)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:502)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:493)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:472)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:464)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:334)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:422)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:163)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:120)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)
+	at S0.run(S0.groovy:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: org.eclipse.e4.core.di.InjectionException: Could not find satisfiable constructor in com.kms.katalon.ai.core.services.ILlmService
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:410)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:319)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:203)
+	at com.kms.katalon.core.main.ExecutionServiceContext.registerService(ExecutionServiceContext.java:36)
+	at com.kms.katalon.core.main.ExecutionServiceContext.registerService(ExecutionServiceContext.java:31)
+	at com.kms.katalon.core.main.ExecutionServiceContext.getService(ExecutionServiceContext.java:51)
+	at com.katalon.selfhealing.execution.healers.LLMTestObjectHealer.heal(LLMTestObjectHealer.java:239)
+	at com.katalon.selfhealing.execution.healers.SelfHealingPipeline.lambda$1(SelfHealingPipeline.java:143)
+	at com.kms.katalon.core.executionpipeline.SubExecutionPipeline.execute(SubExecutionPipeline.java:31)
+	at com.kms.katalon.core.executionpipeline.SubExecutionPipeline.execute(SubExecutionPipeline.java:25)
+	at com.kms.katalon.core.executionpipeline.ExecutionPipeline.execute(ExecutionPipeline.java:16)
+	at com.katalon.selfhealing.execution.healers.SelfHealingPipeline.execute(SelfHealingPipeline.java:177)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findElemnentsWithSelfHealing(WebUIAbstractKeyword.java:201)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.lambda$1(WebUIAbstractKeyword.java:125)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.retry(SeleniumActionRetryController.java:49)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.retry(SeleniumActionRetryController.java:44)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.java:115)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:52)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at jdk.proxy2/jdk.proxy2.$Proxy47.execute(Unknown Source)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.doCall(WebUIKeywordMain.groovy:135)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.call(WebUIKeywordMain.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	... 20 more
+
+2026-02-02 15:34:52.553 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Login/Positive/User Login with Valid Email and Password
+2026-02-02 15:34:52.562 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-02-02 15:34:52.562 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Login/Positive/User Login with Valid Email and Password - Retry attempt 2
+2026-02-02 15:34:52.585 DEBUG User Login with Valid Email and Password - 1: openBrowser("")
+2026-02-02 15:34:52.590 WARN  c.k.k.core.webui.driver.DriverFactory    - A browser is already opened. Closing browser and opening a new one
+2026-02-02 15:34:52.946 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2026-02-02 15:34:52.949 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+Feb 02, 2026 3:34:54 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 144, returning the closest version; found: 143; Please update to a Selenium version that supports CDP version 144
+2026-02-02 15:34:54.413 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = ed6607aabaaa381e2c61552b799ac9c6
+2026-02-02 15:34:54.416 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 144.0.7559.110
+2026-02-02 15:34:54.416 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-02-02 15:34:54.417 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-02-02 15:34:54.418 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-02-02 15:34:54.448 DEBUG User Login with Valid Email and Password - 2: navigateToUrl("https://beca.wd105.myworkdayjobs.com/en-US/Beca/login?redirect=%2Fen-US%2FBeca%2FuserHome")
+2026-02-02 15:35:07.101 DEBUG User Login with Valid Email and Password - 3: setText(findTestObject("Login/Page_Workday/input_Email Address"), "ariefrachmanmaulana@gmail.com")
+2026-02-02 15:35:14.050 DEBUG User Login with Valid Email and Password - 4: click(findTestObject("Login/Page_Workday/input_Password"))
+2026-02-02 15:35:14.670 DEBUG User Login with Valid Email and Password - 5: setEncryptedText(findTestObject("Login/Page_Workday/input_Password"), "8RFGFzomPWdqY7ac6+vrJg==")
+2026-02-02 15:35:15.120 DEBUG User Login with Valid Email and Password - 6: click(findTestObject("Login/Page_Workday/div_Sign InSign InEmail Address_Password_Sign In"))
+2026-02-02 15:35:15.732 DEBUG User Login with Valid Email and Password - 7: click(findTestObject("Login/Page_Workday/div_Sign In"))
+2026-02-02 15:35:16.216 DEBUG User Login with Valid Email and Password - 8: click(findTestObject("Login/Page_Candidate Home/a_Test Analyst"))
+2026-02-02 15:35:26.543 WARN  .c.w.m.WebUiElementFinderWithSelfHealing - [WEBUI-SELF-HEALING] Failed to find element with id 'Object Repository/Login/Page_Candidate Home/a_Test Analyst'. Try using Self-healing.
+2026-02-02 15:35:26.789 INFO  c.k.k.c.webui.model.WebUiElementFinder   - [WEBUI-SELF-HEALING] Failed Locator: '//*[@data-automation-id = 'applicationTitle']//a'.
+2026-02-02 15:35:27.024 INFO  c.k.k.c.webui.model.WebUiElementFinder   - [WEBUI-SELF-HEALING] Failed Locator: '//a[@href = '/en-US/Beca/job/Test-Analyst_JR100145-1' and (text() = 'Test Analyst' or . = 'Test Analyst')]'.
+2026-02-02 15:35:27.273 WARN  c.k.k.c.webui.model.WebUiElementFinder   - [WEBUI-SELF-HEALING] Web element with id: 'Object Repository/Login/Page_Candidate Home/a_Test Analyst' located by 'By.cssSelector: [data-automation-id="applicationTitle"] a' not found
+> Remove hidden elements: 89.277 -> 4.906 (-94,62%)
+> Remove next siblings: 4.906 -> 4.906 (-0%)
+> Remove redundant parents: 4.906 -> 4.906 (-0%)
+> Remove event handler attributes: 4.906 -> 4.906 (-0%)
+> Trim long attributes: 4.906 -> 4.827 (-0,09%)
+> Trim long text: 4.827 -> 4.795 (-0,04%)
+> Minify HTML syntax: 4.795 -> 4.452 (-0,38%)
+>>> Total: 89.171 -> 4.795 (-94,62%)
+2026-02-02 15:35:27.716 ERROR c.k.k.core.keyword.internal.KeywordMain  - ❌ Unable to click on object 'Object Repository/Login/Page_Candidate Home/a_Test Analyst' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Login/Page_Candidate Home/a_Test Analyst'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:133)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:38)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:95)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:721)
+	at User Login with Valid Email and Password.run(User Login with Valid Email and Password:34)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:502)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:493)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:472)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:464)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:334)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:422)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:422)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:163)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:120)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)
+	at S0.run(S0.groovy:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: org.eclipse.e4.core.di.InjectionException: Could not find satisfiable constructor in com.kms.katalon.ai.core.services.ILlmService
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:410)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:319)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:203)
+	at com.kms.katalon.core.main.ExecutionServiceContext.registerService(ExecutionServiceContext.java:36)
+	at com.kms.katalon.core.main.ExecutionServiceContext.registerService(ExecutionServiceContext.java:31)
+	at com.kms.katalon.core.main.ExecutionServiceContext.getService(ExecutionServiceContext.java:51)
+	at com.katalon.selfhealing.execution.healers.LLMTestObjectHealer.heal(LLMTestObjectHealer.java:239)
+	at com.katalon.selfhealing.execution.healers.SelfHealingPipeline.lambda$1(SelfHealingPipeline.java:143)
+	at com.kms.katalon.core.executionpipeline.SubExecutionPipeline.execute(SubExecutionPipeline.java:31)
+	at com.kms.katalon.core.executionpipeline.SubExecutionPipeline.execute(SubExecutionPipeline.java:25)
+	at com.kms.katalon.core.executionpipeline.ExecutionPipeline.execute(ExecutionPipeline.java:16)
+	at com.katalon.selfhealing.execution.healers.SelfHealingPipeline.execute(SelfHealingPipeline.java:177)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findElemnentsWithSelfHealing(WebUIAbstractKeyword.java:201)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.lambda$1(WebUIAbstractKeyword.java:125)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.retry(SeleniumActionRetryController.java:49)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.retry(SeleniumActionRetryController.java:44)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.java:115)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:52)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at jdk.proxy2/jdk.proxy2.$Proxy47.execute(Unknown Source)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.doCall(WebUIKeywordMain.groovy:135)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.call(WebUIKeywordMain.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:133)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:38)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:95)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:721)
+	at Script1770020870251.run(Script1770020870251.groovy:34)
+	... 15 more
+)
+2026-02-02 15:35:27.720 ERROR c.k.katalon.core.main.TestCaseExecutor   - ❌ Test Cases/Login/Positive/User Login with Valid Email and Password FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Login/Page_Candidate Home/a_Test Analyst'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:133)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:38)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:95)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:721)
+	at User Login with Valid Email and Password.run(User Login with Valid Email and Password:34)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:502)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:493)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:472)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:464)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:334)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:422)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:422)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:163)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:120)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)
+	at S0.run(S0.groovy:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: org.eclipse.e4.core.di.InjectionException: Could not find satisfiable constructor in com.kms.katalon.ai.core.services.ILlmService
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:410)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:319)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:203)
+	at com.kms.katalon.core.main.ExecutionServiceContext.registerService(ExecutionServiceContext.java:36)
+	at com.kms.katalon.core.main.ExecutionServiceContext.registerService(ExecutionServiceContext.java:31)
+	at com.kms.katalon.core.main.ExecutionServiceContext.getService(ExecutionServiceContext.java:51)
+	at com.katalon.selfhealing.execution.healers.LLMTestObjectHealer.heal(LLMTestObjectHealer.java:239)
+	at com.katalon.selfhealing.execution.healers.SelfHealingPipeline.lambda$1(SelfHealingPipeline.java:143)
+	at com.kms.katalon.core.executionpipeline.SubExecutionPipeline.execute(SubExecutionPipeline.java:31)
+	at com.kms.katalon.core.executionpipeline.SubExecutionPipeline.execute(SubExecutionPipeline.java:25)
+	at com.kms.katalon.core.executionpipeline.ExecutionPipeline.execute(ExecutionPipeline.java:16)
+	at com.katalon.selfhealing.execution.healers.SelfHealingPipeline.execute(SelfHealingPipeline.java:177)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findElemnentsWithSelfHealing(WebUIAbstractKeyword.java:201)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.lambda$1(WebUIAbstractKeyword.java:125)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.retry(SeleniumActionRetryController.java:49)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.retry(SeleniumActionRetryController.java:44)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.java:115)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:52)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at jdk.proxy2/jdk.proxy2.$Proxy47.execute(Unknown Source)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.doCall(WebUIKeywordMain.groovy:135)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.call(WebUIKeywordMain.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	... 21 more
+
+2026-02-02 15:35:27.724 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Login/Positive/User Login with Valid Email and Password
+2026-02-02 15:35:27.728 INFO  c.k.katalon.core.main.TestCaseExecutor   - --------------------
+2026-02-02 15:35:27.729 INFO  c.k.katalon.core.main.TestCaseExecutor   - START Test Cases/Login/Positive/User Login with Valid Email and Password - Retry attempt 3
+2026-02-02 15:35:27.752 DEBUG User Login with Valid Email and Password - 1: openBrowser("")
+2026-02-02 15:35:27.754 WARN  c.k.k.core.webui.driver.DriverFactory    - A browser is already opened. Closing browser and opening a new one
+2026-02-02 15:35:28.143 INFO  c.k.k.core.webui.driver.DriverFactory    - Starting 'Chrome' driver
+2026-02-02 15:35:28.148 INFO  c.k.k.core.webui.driver.DriverFactory    - Action delay is set to 0 milliseconds
+Feb 02, 2026 3:35:29 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 144, returning the closest version; found: 143; Please update to a Selenium version that supports CDP version 144
+2026-02-02 15:35:29.803 INFO  c.k.k.core.webui.driver.DriverFactory    - sessionId = a968e78e9720c93c8818c8c19e27e4f8
+2026-02-02 15:35:29.803 INFO  c.k.k.core.webui.driver.DriverFactory    - browser = Chrome 144.0.7559.110
+2026-02-02 15:35:29.804 INFO  c.k.k.core.webui.driver.DriverFactory    - platform = Windows 11
+2026-02-02 15:35:29.805 INFO  c.k.k.core.webui.driver.DriverFactory    - seleniumVersion = 4.39.0
+2026-02-02 15:35:29.806 INFO  c.k.k.core.webui.driver.DriverFactory    - proxyInformation = ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList="", isApplyToDesiredCapabilities=true }
+2026-02-02 15:35:29.838 DEBUG User Login with Valid Email and Password - 2: navigateToUrl("https://beca.wd105.myworkdayjobs.com/en-US/Beca/login?redirect=%2Fen-US%2FBeca%2FuserHome")
+2026-02-02 15:35:34.124 DEBUG User Login with Valid Email and Password - 3: setText(findTestObject("Login/Page_Workday/input_Email Address"), "ariefrachmanmaulana@gmail.com")
+2026-02-02 15:35:38.873 DEBUG User Login with Valid Email and Password - 4: click(findTestObject("Login/Page_Workday/input_Password"))
+2026-02-02 15:35:39.561 DEBUG User Login with Valid Email and Password - 5: setEncryptedText(findTestObject("Login/Page_Workday/input_Password"), "8RFGFzomPWdqY7ac6+vrJg==")
+2026-02-02 15:35:40.011 DEBUG User Login with Valid Email and Password - 6: click(findTestObject("Login/Page_Workday/div_Sign InSign InEmail Address_Password_Sign In"))
+2026-02-02 15:35:40.590 DEBUG User Login with Valid Email and Password - 7: click(findTestObject("Login/Page_Workday/div_Sign In"))
+2026-02-02 15:35:41.028 DEBUG User Login with Valid Email and Password - 8: click(findTestObject("Login/Page_Candidate Home/a_Test Analyst"))
+2026-02-02 15:35:51.380 WARN  .c.w.m.WebUiElementFinderWithSelfHealing - [WEBUI-SELF-HEALING] Failed to find element with id 'Object Repository/Login/Page_Candidate Home/a_Test Analyst'. Try using Self-healing.
+2026-02-02 15:35:51.615 INFO  c.k.k.c.webui.model.WebUiElementFinder   - [WEBUI-SELF-HEALING] Failed Locator: '//*[@data-automation-id = 'applicationTitle']//a'.
+2026-02-02 15:35:51.847 INFO  c.k.k.c.webui.model.WebUiElementFinder   - [WEBUI-SELF-HEALING] Failed Locator: '//a[@href = '/en-US/Beca/job/Test-Analyst_JR100145-1' and (text() = 'Test Analyst' or . = 'Test Analyst')]'.
+2026-02-02 15:35:52.098 WARN  c.k.k.c.webui.model.WebUiElementFinder   - [WEBUI-SELF-HEALING] Web element with id: 'Object Repository/Login/Page_Candidate Home/a_Test Analyst' located by 'By.cssSelector: [data-automation-id="applicationTitle"] a' not found
+> Remove hidden elements: 89.441 -> 4.906 (-94,63%)
+> Remove next siblings: 4.906 -> 4.906 (-0%)
+> Remove redundant parents: 4.906 -> 4.906 (-0%)
+> Remove event handler attributes: 4.906 -> 4.906 (-0%)
+> Trim long attributes: 4.906 -> 4.827 (-0,09%)
+> Trim long text: 4.827 -> 4.795 (-0,04%)
+> Minify HTML syntax: 4.795 -> 4.452 (-0,38%)
+>>> Total: 89.335 -> 4.795 (-94,63%)
+2026-02-02 15:35:52.465 ERROR c.k.k.core.keyword.internal.KeywordMain  - ❌ Unable to click on object 'Object Repository/Login/Page_Candidate Home/a_Test Analyst' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Login/Page_Candidate Home/a_Test Analyst'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:133)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:38)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:95)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:721)
+	at User Login with Valid Email and Password.run(User Login with Valid Email and Password:34)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:502)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:493)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:472)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:464)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:334)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:422)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:422)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:422)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:163)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:120)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)
+	at S0.run(S0.groovy:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: org.eclipse.e4.core.di.InjectionException: Could not find satisfiable constructor in com.kms.katalon.ai.core.services.ILlmService
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:410)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:319)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:203)
+	at com.kms.katalon.core.main.ExecutionServiceContext.registerService(ExecutionServiceContext.java:36)
+	at com.kms.katalon.core.main.ExecutionServiceContext.registerService(ExecutionServiceContext.java:31)
+	at com.kms.katalon.core.main.ExecutionServiceContext.getService(ExecutionServiceContext.java:51)
+	at com.katalon.selfhealing.execution.healers.LLMTestObjectHealer.heal(LLMTestObjectHealer.java:239)
+	at com.katalon.selfhealing.execution.healers.SelfHealingPipeline.lambda$1(SelfHealingPipeline.java:143)
+	at com.kms.katalon.core.executionpipeline.SubExecutionPipeline.execute(SubExecutionPipeline.java:31)
+	at com.kms.katalon.core.executionpipeline.SubExecutionPipeline.execute(SubExecutionPipeline.java:25)
+	at com.kms.katalon.core.executionpipeline.ExecutionPipeline.execute(ExecutionPipeline.java:16)
+	at com.katalon.selfhealing.execution.healers.SelfHealingPipeline.execute(SelfHealingPipeline.java:177)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findElemnentsWithSelfHealing(WebUIAbstractKeyword.java:201)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.lambda$1(WebUIAbstractKeyword.java:125)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.retry(SeleniumActionRetryController.java:49)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.retry(SeleniumActionRetryController.java:44)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.java:115)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:52)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at jdk.proxy2/jdk.proxy2.$Proxy47.execute(Unknown Source)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.doCall(WebUIKeywordMain.groovy:135)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.call(WebUIKeywordMain.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:133)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:38)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:95)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:721)
+	at Script1770020870251.run(Script1770020870251.groovy:34)
+	... 16 more
+)
+2026-02-02 15:35:52.472 ERROR c.k.katalon.core.main.TestCaseExecutor   - ❌ Test Cases/Login/Positive/User Login with Valid Email and Password FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/Login/Page_Candidate Home/a_Test Analyst'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:177)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:49)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeywordUntilTimeout(WebUIKeywordMain.groovy:133)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:72)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:38)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:95)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:721)
+	at User Login with Valid Email and Password.run(User Login with Valid Email and Password:34)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:502)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:493)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:472)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:464)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:334)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:422)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:422)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:422)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:71)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:163)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:120)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:205)
+	at S0.run(S0.groovy:35)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+Caused by: org.eclipse.e4.core.di.InjectionException: Could not find satisfiable constructor in com.kms.katalon.ai.core.services.ILlmService
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:410)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:319)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:203)
+	at com.kms.katalon.core.main.ExecutionServiceContext.registerService(ExecutionServiceContext.java:36)
+	at com.kms.katalon.core.main.ExecutionServiceContext.registerService(ExecutionServiceContext.java:31)
+	at com.kms.katalon.core.main.ExecutionServiceContext.getService(ExecutionServiceContext.java:51)
+	at com.katalon.selfhealing.execution.healers.LLMTestObjectHealer.heal(LLMTestObjectHealer.java:239)
+	at com.katalon.selfhealing.execution.healers.SelfHealingPipeline.lambda$1(SelfHealingPipeline.java:143)
+	at com.kms.katalon.core.executionpipeline.SubExecutionPipeline.execute(SubExecutionPipeline.java:31)
+	at com.kms.katalon.core.executionpipeline.SubExecutionPipeline.execute(SubExecutionPipeline.java:25)
+	at com.kms.katalon.core.executionpipeline.ExecutionPipeline.execute(ExecutionPipeline.java:16)
+	at com.katalon.selfhealing.execution.healers.SelfHealingPipeline.execute(SelfHealingPipeline.java:177)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findElemnentsWithSelfHealing(WebUIAbstractKeyword.java:201)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.lambda$1(WebUIAbstractKeyword.java:125)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.retry(SeleniumActionRetryController.java:49)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.retry(SeleniumActionRetryController.java:44)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword.findWebElement(WebUIAbstractKeyword.java:115)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:52)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at jdk.proxy2/jdk.proxy2.$Proxy47.execute(Unknown Source)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:96)
+	at com.kms.katalon.core.webui.model.SeleniumActionRetryController.performAction(SeleniumActionRetryController.java:83)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.doCall(WebUIKeywordMain.groovy:135)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain$_runKeywordUntilTimeout_closure1.call(WebUIKeywordMain.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:41)
+	... 22 more
+
+2026-02-02 15:35:52.476 INFO  c.k.katalon.core.main.TestCaseExecutor   - END Test Cases/Login/Positive/User Login with Valid Email and Password
+2026-02-02 15:35:52.905 INFO  c.k.katalon.core.main.TestSuiteExecutor  - --------------------
+2026-02-02 15:35:52.906 INFO  c.k.katalon.core.main.TestSuiteExecutor  - END Test Suites/Login
+2026-02-02 15:35:52.906 INFO  c.k.katalon.core.main.TestSuiteExecutor  - ====================
