@@ -20,4 +20,4 @@ jobs:
         uses: katalon-studio/katalon-studio-github-action@v2.2 # Gunakan v2.2
         with:
           version: '8.6.8' # Tentukan versi manual daripada 'latest'
-          args: '-noSplash -runMode=console -browserType="Chrome (headless)" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/Login" -apiKey=${{ secrets.KATALON_API_KEY }} --config -webui.autoUpdateDrivers=true'
+          args: 'xvfb-run -a katalonc -noSplash -runMode=console -browserType="Chrome" -testSuitePath="Test Suites/Login" -apiKey=${{ secrets.KATALON_API_KEY }}'
